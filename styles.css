@@ -1,0 +1,128 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.box {
+    background-color: #000000;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.lang-btn {
+    border: none;
+    background-color: #000000;
+    color: #00ED84;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.lang-btn:focus {
+    outline: none;
+}
+
+h1 {
+    font-family: 'Integral CF Extra Bold', sans-serif;
+    font-size: 2.5rem;
+    color: #5800D7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+label {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+
+.operator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.operator-btn {
+    background-color: #5800D7;
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.operator-btn.active {
+    background-color: #00ED84;
+}
+
+.operator-btn:hover {
+    background-color: #00ED84;
+}
+
+input {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #5800D7;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
+    outline: none;
+}
+
+input:focus {
+    border-color: #00ED84;
+}
+
+button {
+    background-color: #5800D7;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #00ED84;
+}
+
+.results {
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: 'Integral CF Extra Bold', sans-serif;
+    font-size: 2rem;
+    color: #00ED84;
+}

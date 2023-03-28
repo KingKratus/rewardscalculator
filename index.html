@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayru Rewards Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculator.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="language-selector">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="es">ES</button>
+                <button class="lang-btn" data-lang="pt">PT</button>
+            </div>
+            <h1 data-translate="title">Wayru Rewards Calculator</h1>
+            <form>
+                <label data-translate="operator_type">Operator Type:</label>
+                <div class="operator-buttons">
+                    <button type="button" class="operator-btn" data-value="1" data-translate="type1">Hotspot Operators</button>
+                    <button type="button" class="operator-btn" data-value="2" data-translate="type2">WiFi Zones with third-party fiber</button>
+                    <button type="button" class="operator-btn" data-value="3" data-translate="type3">WiFi Zones with Wayru fiber</button>
+                </div>
+
+                <label for="hotspots" data-translate="hotspots">Number of Hotspots:</label>
+                <input type="number" id="hotspots" min="1" step="1" value="1">
+
+                <label for="uptime" data-translate="uptime">Uptime percentage:</label>
+                <input type="number" id="uptime" min="0" max="100" step="1" value="100">
+
+                <label for="gbShared" data-translate="gb_shared">GB Shared Daily:</label>
+                <input type="number" id="gbShared" min="0" step="1" value="0">
+
+                <button type="button" id="calculate" data-translate="calculate">Calculate Rewards</button>
+            </form>
+
+            <div class="results">
+                <h2 id="result" data-translate="result">Monthly Rewards: 0 WRU</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
